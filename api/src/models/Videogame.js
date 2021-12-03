@@ -9,17 +9,17 @@ module.exports = (sequelize) => {
       allowNull: false,
       unique: true,
       primaryKey: true,
-      defaultValue: DataTypes.INTEGER,
+      defaultValue: DataTypes.UUIDV4,
     },
-    nombre: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    descripcion: {
+    descripcion: { //bro este no aparece en lo que tare la api o sea no veo una descripcion jaja
       type: DataTypes.STRING,
       allowNull: false,
     },
-    fechadelanzamiento: {
+    released_at: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -27,7 +27,7 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    plataformas: {
+    platforms: {
       type: DataTypes.STRING,
       allowNull: false,
     },
